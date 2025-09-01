@@ -218,8 +218,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8486559676095495670}
   - component: {fileID: 2526688281262403335}
-  - component: {fileID: 2103114968629025078}
-  - component: {fileID: 6942267176920089600}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Untagged
@@ -259,54 +257,6 @@ MonoBehaviour:
   graphics: {fileID: 8489146290247067029}
   animator: {fileID: 5492479815707421596}
   weaponController: {fileID: 6920217936996610435}
---- !u!114 &2103114968629025078
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5176289504958027489}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62daa4fc196fe0646810f7b939ab0679, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnEntityShot:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2526688281262403335}
-        m_TargetAssemblyTypeName: IsometricNPC, Assembly-CSharp
-        m_MethodName: OnShot
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!65 &6942267176920089600
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5176289504958027489}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 5, y: 3, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8939965262583921496
 GameObject:
   m_ObjectHideFlags: 0
@@ -319,6 +269,8 @@ GameObject:
   - component: {fileID: 2412809532083062192}
   - component: {fileID: 6320270997879355218}
   - component: {fileID: 4709592937455077644}
+  - component: {fileID: 6240452207200451773}
+  - component: {fileID: 543582160861730538}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -409,6 +361,54 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!65 &6240452207200451773
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8939965262583921496}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5, y: 3, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &543582160861730538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8939965262583921496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62daa4fc196fe0646810f7b939ab0679, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnEntityShot:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2526688281262403335}
+        m_TargetAssemblyTypeName: IsometricNPC, Assembly-CSharp
+        m_MethodName: OnShot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1997658126445163748
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -420,6 +420,18 @@ PrefabInstance:
     - target: {fileID: 463460170181916525, guid: 32b1cd1dad0115d498e2bdb8096f297b, type: 3}
       propertyPath: m_Name
       value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 3699785291220546886, guid: 32b1cd1dad0115d498e2bdb8096f297b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3699785291220546886, guid: 32b1cd1dad0115d498e2bdb8096f297b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3699785291220546886, guid: 32b1cd1dad0115d498e2bdb8096f297b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.55
       objectReference: {fileID: 0}
     - target: {fileID: 8729638381647408567, guid: 32b1cd1dad0115d498e2bdb8096f297b, type: 3}
       propertyPath: m_LocalScale.x
