@@ -255,6 +255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graphics: {fileID: 8489146290247067029}
+  hitBox: {fileID: 6240452207200451773}
   animator: {fileID: 5492479815707421596}
   weaponController: {fileID: 6920217936996610435}
 --- !u!1 &8939965262583921496
@@ -380,7 +381,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 5, y: 3, z: 1}
+  m_Size: {x: 3, y: 3, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &543582160861730538
 MonoBehaviour:

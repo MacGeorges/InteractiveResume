@@ -6,6 +6,9 @@ public class IsometricNPC : MonoBehaviour
     private Transform graphics;
 
     [SerializeField]
+    private Collider hitBox;
+
+    [SerializeField]
     private Animator animator;
 
     [SerializeField]
@@ -31,16 +34,18 @@ public class IsometricNPC : MonoBehaviour
         {
             animator.SetTrigger("Walk");
         }
-
-        if (health <= 0)
-        {
-            animator.SetTrigger("Die");
-            isDead = true;
-        }
     }
 
     public void OnShot()
     {
         health -= 25;
+
+        if (health <= 0)
+        {
+            animator.SetTrigger("Die");
+            isDead = true;
+
+            hitBox.enabled = false;
+        }
     }
 }
