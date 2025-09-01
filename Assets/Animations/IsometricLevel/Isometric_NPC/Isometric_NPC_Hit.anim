@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Isometric_NPC_Death
+  m_Name: Isometric_NPC_Hit
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -23,15 +23,7 @@ AnimationClip:
     - time: 0
       value: {fileID: 1065427378, guid: 6c342be77dcf4f7478fee841cd9c473c, type: 3}
     - time: 0.16666667
-      value: {fileID: -1023279359, guid: 6c342be77dcf4f7478fee841cd9c473c, type: 3}
-    - time: 0.33333334
-      value: {fileID: -1433085656, guid: 6c342be77dcf4f7478fee841cd9c473c, type: 3}
-    - time: 0.5
-      value: {fileID: -400309668, guid: 6c342be77dcf4f7478fee841cd9c473c, type: 3}
-    - time: 0.6666667
-      value: {fileID: -139873352, guid: 6c342be77dcf4f7478fee841cd9c473c, type: 3}
-    - time: 0.8333333
-      value: {fileID: 1150422222, guid: 6c342be77dcf4f7478fee841cd9c473c, type: 3}
+      value: {fileID: 1065427378, guid: 6c342be77dcf4f7478fee841cd9c473c, type: 3}
     attribute: m_Sprite
     path: 
     classID: 114
@@ -55,22 +47,18 @@ AnimationClip:
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
     - {fileID: 1065427378, guid: 6c342be77dcf4f7478fee841cd9c473c, type: 3}
-    - {fileID: -1023279359, guid: 6c342be77dcf4f7478fee841cd9c473c, type: 3}
-    - {fileID: -1433085656, guid: 6c342be77dcf4f7478fee841cd9c473c, type: 3}
-    - {fileID: -400309668, guid: 6c342be77dcf4f7478fee841cd9c473c, type: 3}
-    - {fileID: -139873352, guid: 6c342be77dcf4f7478fee841cd9c473c, type: 3}
-    - {fileID: 1150422222, guid: 6c342be77dcf4f7478fee841cd9c473c, type: 3}
+    - {fileID: 1065427378, guid: 6c342be77dcf4f7478fee841cd9c473c, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.84999996
+    m_StopTime: 0.18333334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
     m_HasAdditiveReferencePose: 0
-    m_LoopTime: 0
+    m_LoopTime: 1
     m_LoopBlend: 0
     m_LoopBlendOrientation: 0
     m_LoopBlendPositionY: 0
@@ -85,8 +73,15 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.8333333
-    functionName: DeadAnimCompleted
+  - time: 0
+    functionName: SetIsHit
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 1
+    messageOptions: 0
+  - time: 0.16666667
+    functionName: SetIsHit
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

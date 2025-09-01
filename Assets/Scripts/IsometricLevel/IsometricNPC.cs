@@ -12,7 +12,16 @@ public class IsometricNPC : MonoBehaviour
     private Animator animator;
 
     [SerializeField]
+    private IsometricNPCHitController hitController;
+
+    [SerializeField]
     private IsometricWeaponController weaponController;
+
+    [SerializeField]
+    private GameObject reward;
+
+    [SerializeField]
+    private float speed;
 
     private int health = 100;
     private bool isDead;
@@ -21,7 +30,7 @@ public class IsometricNPC : MonoBehaviour
     {
         graphics.LookAt(Camera.main.transform);
 
-        if(isDead)
+        if(isDead || hitController.isHit)
         {
             return;
         }
@@ -33,6 +42,7 @@ public class IsometricNPC : MonoBehaviour
         else
         {
             animator.SetTrigger("Walk");
+            transform.Translate(graphics.forward * Time.deltaTime * speed, Space.Self);
         }
     }
 
@@ -47,5 +57,14 @@ public class IsometricNPC : MonoBehaviour
 
             hitBox.enabled = false;
         }
+        else
+        {
+            animator.SetTrigger("Hit");
+        }
+    }
+
+    public void OnDeadAnimCompleted()
+    {
+        reward.SetActive(true);
     }
 }
