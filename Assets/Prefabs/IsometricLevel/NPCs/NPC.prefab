@@ -290,6 +290,8 @@ MonoBehaviour:
   weaponController: {fileID: 6920217936996610435}
   reward: {fileID: 5664607254323668278}
   speed: 5
+  shootAnim: {fileID: 7400000, guid: 3adecdd900acc4f48994276ff79f2ac4, type: 2}
+  walkAnim: {fileID: 7400000, guid: a822b4c539ae6db4da41436992bc1fe1, type: 2}
 --- !u!1 &5664607254323668278
 GameObject:
   m_ObjectHideFlags: 0
