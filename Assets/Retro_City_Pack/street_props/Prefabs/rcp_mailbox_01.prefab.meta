@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c58ef74fbc2d9304988eaaf8aa63b16a
+timeCreated: 1431774051
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 8707
+  packageName: 'RCP: Retro City Pack'
+  packageVersion: 1.3
+  assetPath: Assets/Retro_City_Pack/street_props/Prefabs/rcp_mailbox_01.prefab
+  uploadId: 64123

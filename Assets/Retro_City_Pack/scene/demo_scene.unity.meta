@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 424316531172cf04f9b6fae421ac0647
+timeCreated: 1431450766
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 8707
+  packageName: 'RCP: Retro City Pack'
+  packageVersion: 1.3
+  assetPath: Assets/Retro_City_Pack/scene/demo_scene.unity
+  uploadId: 64123

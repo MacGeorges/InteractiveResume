@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0cfb7adbc3b80394a82c27288a69e72e
+timeCreated: 1431545606
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 8707
+  packageName: 'RCP: Retro City Pack'
+  packageVersion: 1.3
+  assetPath: Assets/Retro_City_Pack/building_03/Prefab/rcp_building_03.prefab
+  uploadId: 64123

@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 0aeaa4cb29f5d4e9c8455f04c8575c8c
+ShaderImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 8344
+  packageName: Extreme Vehicle Pack
+  packageVersion: 1.10
+  assetPath: Assets/Extreme Vehicle Pack/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/BrightPassFilter2.shader
+  uploadId: 73361

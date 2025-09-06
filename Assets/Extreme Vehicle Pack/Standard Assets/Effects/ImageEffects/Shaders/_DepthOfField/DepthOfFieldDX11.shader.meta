@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: d8e82664aa8686642a424c88ab10164a
+ShaderImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 8344
+  packageName: Extreme Vehicle Pack
+  packageVersion: 1.10
+  assetPath: Assets/Extreme Vehicle Pack/Standard Assets/Effects/ImageEffects/Shaders/_DepthOfField/DepthOfFieldDX11.shader
+  uploadId: 73361

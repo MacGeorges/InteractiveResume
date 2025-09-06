@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 67f8781cad112c75d0008dfa8d76c639
+ShaderImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 8344
+  packageName: Extreme Vehicle Pack
+  packageVersion: 1.10
+  assetPath: Assets/Extreme Vehicle Pack/Standard Assets/Effects/ImageEffects/Shaders/ColorCorrectionEffect.shader
+  uploadId: 73361

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 43249acf4cfc99a4189783700a321a7d
+timeCreated: 1433674672
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 8344
+  packageName: Extreme Vehicle Pack
+  packageVersion: 1.10
+  assetPath: Assets/Extreme Vehicle Pack/Models/Model_Helicopters/Animation/Model_Helicopter_Rear.controller
+  uploadId: 73361

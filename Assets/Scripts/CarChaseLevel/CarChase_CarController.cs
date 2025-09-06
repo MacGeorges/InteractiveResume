@@ -3,8 +3,9 @@ using UnityEngine;
 public class CarChase_CarController : MonoBehaviour
 {
     [SerializeField]
-    private Transform splineTarget;
-
+    private ParticleSystem backLeftWheel;
+    [SerializeField]
+    private ParticleSystem backRightWheel;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -15,6 +16,21 @@ public class CarChase_CarController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.LookAt(splineTarget);
+
+    }
+
+    public void Drift(bool drifting)
+    {
+        if (drifting && !backLeftWheel.isPlaying)
+        {
+            backLeftWheel.Play();
+            backRightWheel.Play();
+        }
+
+        if(!drifting && backLeftWheel.isPlaying)
+        {
+            backLeftWheel.Stop();
+            backRightWheel.Stop();
+        }
     }
 }

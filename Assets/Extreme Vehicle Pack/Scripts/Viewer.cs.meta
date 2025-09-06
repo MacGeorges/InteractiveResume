@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d1f817c38739f204092929b96b7824fd
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 8344
+  packageName: Extreme Vehicle Pack
+  packageVersion: 1.10
+  assetPath: Assets/Extreme Vehicle Pack/Scripts/Viewer.cs
+  uploadId: 73361

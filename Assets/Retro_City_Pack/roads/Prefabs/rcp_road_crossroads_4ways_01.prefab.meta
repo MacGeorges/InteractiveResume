@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2c30beb7086ea9647a4141b6cb782b7d
+timeCreated: 1431780516
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 8707
+  packageName: 'RCP: Retro City Pack'
+  packageVersion: 1.3
+  assetPath: Assets/Retro_City_Pack/roads/Prefabs/rcp_road_crossroads_4ways_01.prefab
+  uploadId: 64123

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2fc84d92e1fc6ec4c9b30adb11041671
+timeCreated: 1431780213
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 8707
+  packageName: 'RCP: Retro City Pack'
+  packageVersion: 1.3
+  assetPath: Assets/Retro_City_Pack/street_props/Prefabs/rcp_trash_can_01.prefab
+  uploadId: 64123

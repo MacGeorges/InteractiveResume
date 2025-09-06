@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2e9848b3956c9f54bab78cffa004f669
+timeCreated: 1431780386
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 8707
+  packageName: 'RCP: Retro City Pack'
+  packageVersion: 1.3
+  assetPath: Assets/Retro_City_Pack/sidewalk/Prefabs/rcp_sidewalk_corner_outside.prefab
+  uploadId: 64123

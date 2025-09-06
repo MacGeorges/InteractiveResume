@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 9d920c42a5f9fc045886a643273678f4
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11109
+  packageName: Retro City Pack II
+  packageVersion: 1.0
+  assetPath: Assets/Retro_City_Pack_II/Shaders/Normal-Bumped-Doublesided.shader
+  uploadId: 28889

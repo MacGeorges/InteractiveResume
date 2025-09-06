@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9823f873576c5eb45a13a826a17a41b4
+timeCreated: 1433674071
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 8344
+  packageName: Extreme Vehicle Pack
+  packageVersion: 1.10
+  assetPath: Assets/Extreme Vehicle Pack/Models/Model_Helicopters/Animation/Model_Helicopter.controller
+  uploadId: 73361

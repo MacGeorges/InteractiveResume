@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d448c8031ea45da4f8259a00763538a6
+timeCreated: 1433673103
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 8344
+  packageName: Extreme Vehicle Pack
+  packageVersion: 1.10
+  assetPath: Assets/Extreme Vehicle Pack/Models/Model_Cars/Materials/Mat_Taxicab_lights.mat
+  uploadId: 73361

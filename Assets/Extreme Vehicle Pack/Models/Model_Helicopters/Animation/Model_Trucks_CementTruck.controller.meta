@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b146ff419b10254479f458740f41a5c7
+timeCreated: 1433673745
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 8344
+  packageName: Extreme Vehicle Pack
+  packageVersion: 1.10
+  assetPath: Assets/Extreme Vehicle Pack/Models/Model_Helicopters/Animation/Model_Trucks_CementTruck.controller
+  uploadId: 73361

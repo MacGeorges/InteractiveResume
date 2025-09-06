@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 997717439825f8f47b3e4c5ebc24a0ef
+timeCreated: 1431780049
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 8707
+  packageName: 'RCP: Retro City Pack'
+  packageVersion: 1.3
+  assetPath: Assets/Retro_City_Pack/street_props/Prefabs/rcp_sidewalk_sign_04.prefab
+  uploadId: 64123

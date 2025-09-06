@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d2d4d93d4021b6b438b219206a924e4b
+timeCreated: 1437298230
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 8344
+  packageName: Extreme Vehicle Pack
+  packageVersion: 1.10
+  assetPath: Assets/Extreme Vehicle Pack/Models/Model_Cars/Materials/Mat_Car_Van_Deliver_Lights.mat
+  uploadId: 73361

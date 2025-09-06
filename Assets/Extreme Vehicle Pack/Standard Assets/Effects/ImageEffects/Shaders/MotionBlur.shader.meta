@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: e9ba2083ad114a07d000fbfb8d76c639
+ShaderImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 8344
+  packageName: Extreme Vehicle Pack
+  packageVersion: 1.10
+  assetPath: Assets/Extreme Vehicle Pack/Standard Assets/Effects/ImageEffects/Shaders/MotionBlur.shader
+  uploadId: 73361

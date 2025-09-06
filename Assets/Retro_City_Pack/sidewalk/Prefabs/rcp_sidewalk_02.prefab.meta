@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6ee12ce63cc9af74a8005691da1639fc
+timeCreated: 1431780379
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 8707
+  packageName: 'RCP: Retro City Pack'
+  packageVersion: 1.3
+  assetPath: Assets/Retro_City_Pack/sidewalk/Prefabs/rcp_sidewalk_02.prefab
+  uploadId: 64123
