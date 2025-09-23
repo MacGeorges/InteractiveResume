@@ -40,7 +40,7 @@ public class Museum_PlayerController : MonoBehaviour
 
         Mathf.Clamp(speed, 0, 1);
 
-        Debug.Log("Speed: " + speed);
+        //Debug.Log("Speed: " + speed);
 
         animator.SetFloat("MovementSpeed", speed);
         lastPosition = transform.position;
