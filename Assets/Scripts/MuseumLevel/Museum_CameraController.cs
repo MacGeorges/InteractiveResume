@@ -1,9 +1,11 @@
+using NUnit.Framework;
 using UnityEngine;
+using System.Collections.Generic;
 
 public class Museum_CameraController : MonoBehaviour
 {
-    private Transform positionTarget;
-    private Transform lookAtTarget;
+    [SerializeField] //Showing for debug
+    private List<Transform> positionTargetQueue = new List<Transform>();
 
     [SerializeField]
     private Transform player;
@@ -11,24 +13,26 @@ public class Museum_CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(positionTarget)
+        transform.LookAt(player.position);
+
+        if(positionTargetQueue.Count == 0)
         {
-            transform.position = Vector3.Lerp(transform.position, positionTarget.position, Time.deltaTime);
+            return;
         }
 
-        transform.LookAt(player.position);
+        transform.position = Vector3.Lerp(transform.position, positionTargetQueue[0].position, Time.deltaTime);
+
+        if (Vector3.Distance(transform.position, positionTargetQueue[0].position) < (0.1f * positionTargetQueue.Count * 100) && (positionTargetQueue.Count > 1))
+        {
+            positionTargetQueue.RemoveAt(0);
+        }
     }
 
     public void SetCameraTargets(Transform positionTarget, Transform lookAtTarget)
     {
-        if(positionTarget != this.positionTarget)
+        if(!positionTargetQueue.Contains(positionTarget))
         {
-            this.positionTarget = positionTarget;
-        }
-
-        if (lookAtTarget != this.lookAtTarget)
-        {
-            this.lookAtTarget = lookAtTarget;
+            positionTargetQueue.Add(positionTarget);
         }
     }
 }
