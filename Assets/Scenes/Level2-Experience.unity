@@ -603,6 +603,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rcp_fence_01b (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 481204, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 462.82
@@ -1932,6 +1936,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rcp_fence_01b (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 481204, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 456.47998
@@ -2378,6 +2386,10 @@ PrefabInstance:
     - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_Name
       value: rcp_fence_01b (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 481204, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4919,7 +4931,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 441142, guid: b3af208cc95b7b448a529c3f35bbae47, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 441142, guid: b3af208cc95b7b448a529c3f35bbae47, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6794,6 +6806,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rcp_fence_01b (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 481204, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 405.76
@@ -6855,6 +6871,10 @@ PrefabInstance:
     - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_Name
       value: rcp_fence_01b (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 481204, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7041,6 +7061,10 @@ PrefabInstance:
     - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_Name
       value: rcp_fence_01b (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 481204, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8133,6 +8157,7 @@ Transform:
   - {fileID: 556865444}
   - {fileID: 1920966510}
   - {fileID: 200049431}
+  - {fileID: 992978771}
   - {fileID: 1122047124}
   - {fileID: 282226931}
   m_Father: {fileID: 0}
@@ -8462,6 +8487,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rcp_fence_01b (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 481204, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 459.65
@@ -8647,6 +8676,10 @@ PrefabInstance:
     - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_Name
       value: rcp_fence_01b (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 481204, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10083,6 +10116,10 @@ PrefabInstance:
     - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_Name
       value: rcp_fence_01b (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 481204, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11696,6 +11733,10 @@ PrefabInstance:
     - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_Name
       value: rcp_fence_01b (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 481204, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13447,6 +13488,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rcp_fence_01b (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 481204, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 399.41998
@@ -13942,6 +13987,10 @@ PrefabInstance:
     - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_Name
       value: rcp_fence_01b (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 481204, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16132,6 +16181,10 @@ PrefabInstance:
     - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_Name
       value: rcp_fence_01b (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 481204, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18652,7 +18705,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 441142, guid: b3af208cc95b7b448a529c3f35bbae47, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 441142, guid: b3af208cc95b7b448a529c3f35bbae47, type: 3}
       propertyPath: m_LocalPosition.z
@@ -18951,6 +19004,118 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 411024, guid: 2c30beb7086ea9647a4141b6cb782b7d, type: 3}
   m_PrefabInstance: {fileID: 991017509}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &992978770
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 992978771}
+  - component: {fileID: 992978774}
+  - component: {fileID: 992978773}
+  - component: {fileID: 992978772}
+  m_Layer: 0
+  m_Name: Concrete
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &992978771
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992978770}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -248, y: 0.001, z: 399}
+  m_LocalScale: {x: 50, y: 1, z: 20}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 424349611}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &992978772
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992978770}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &992978773
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992978770}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 2c2c7dbf511a39d4fab3237ffc18b083, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &992978774
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992978770}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &994022724
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21380,6 +21545,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rcp_fence_01b (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 481204, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 418.44
@@ -21631,6 +21800,10 @@ PrefabInstance:
     - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_Name
       value: rcp_fence_01b
+      objectReference: {fileID: 0}
+    - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 481204, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23022,6 +23195,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1927253053}
     m_Modifications:
+    - target: {fileID: 6856692326387811070, guid: 861f14c83213ed246a9d7c7664bf839a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8253054606327660303, guid: 861f14c83213ed246a9d7c7664bf839a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 200
@@ -24611,6 +24788,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rcp_fence_01b
       objectReference: {fileID: 0}
+    - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 481204, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 475.5
@@ -25229,6 +25410,10 @@ PrefabInstance:
     - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_Name
       value: rcp_fence_01b
+      objectReference: {fileID: 0}
+    - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 481204, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26311,7 +26496,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 441142, guid: b3af208cc95b7b448a529c3f35bbae47, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.002
       objectReference: {fileID: 0}
     - target: {fileID: 441142, guid: b3af208cc95b7b448a529c3f35bbae47, type: 3}
       propertyPath: m_LocalPosition.z
@@ -27388,6 +27573,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rcp_fence_01b (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 481204, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 431.12
@@ -27950,6 +28139,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rcp_fence_01b (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 481204, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 434.29
@@ -28197,6 +28390,10 @@ PrefabInstance:
     - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_Name
       value: rcp_fence_01b (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 481204, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -29870,6 +30067,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rcp_fence_01b (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 481204, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 437.46002
@@ -29993,6 +30194,10 @@ PrefabInstance:
     - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_Name
       value: rcp_fence_01b (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 481204, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -30636,6 +30841,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rcp_fence_01b (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 481204, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 453.31
@@ -30864,6 +31073,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rcp_fence_01b (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 481204, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 485.01
@@ -31049,6 +31262,10 @@ PrefabInstance:
     - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_Name
       value: rcp_fence_01b (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 481204, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -31488,6 +31705,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rcp_fence_01b (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 481204, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 450.13998
@@ -31719,7 +31940,7 @@ MonoBehaviour:
           w: 0.09853785
     - Position:
         x: 397.74448
-        y: -0.20001526
+        y: 0
         z: 82.77115
       TangentIn:
         x: 0
@@ -31731,31 +31952,31 @@ MonoBehaviour:
         z: 31.894531
       Rotation:
         value:
-          x: -0.009491018
+          x: -0.00949102
           y: 0.9970308
           z: -0.007489974
           w: 0.076049656
     - Position:
         x: 397.9445
-        y: -0.000015258789
+        y: 0
         z: -2.22885
       TangentIn:
         x: -0
         y: -0
-        z: -21.776785
+        z: -21.776737
       TangentOut:
         x: 0
         y: 0
-        z: 24.27547
+        z: 24.275454
       Rotation:
         value:
-          x: 0.00031296955
-          y: 0.93022555
-          z: 0.0007439173
-          w: -0.36698753
+          x: 0.000016860418
+          y: 0.930226
+          z: -0.000006651667
+          w: -0.36698696
     - Position:
         x: 292.5445
-        y: -0.000015258789
+        y: 0
         z: -9.12885
       TangentIn:
         x: -0
@@ -31767,13 +31988,13 @@ MonoBehaviour:
         z: 64.83805
       Rotation:
         value:
-          x: -0.00000004217747
+          x: -0.00000004217748
           y: 0.9303864
-          z: 0.00000001661829
+          z: 0.000000016618294
           w: -0.36658034
     - Position:
         x: 294.1445
-        y: -0.000015258789
+        y: 0
         z: -399.22885
       TangentIn:
         x: 0
@@ -31785,13 +32006,13 @@ MonoBehaviour:
         z: 120.93905
       Rotation:
         value:
-          x: -0.000000017464645
+          x: -0.000000017464654
           y: 0.78074294
-          z: 0.000000013977493
-          w: -0.6248525
+          z: 0.0000000139774965
+          w: -0.6248524
     - Position:
         x: -2.1555068
-        y: -0.000015258789
+        y: 0
         z: -402.02887
       TangentIn:
         x: 0
@@ -31803,13 +32024,13 @@ MonoBehaviour:
         z: 32.40385
       Rotation:
         value:
-          x: -1.2747339e-12
-          y: -0.007715389
-          z: 1.6521469e-10
+          x: -1.274735e-12
+          y: -0.007715392
+          z: 1.6521477e-10
           w: 0.9999703
     - Position:
         x: -3.555507
-        y: -0.000015258789
+        y: 0
         z: 298.17114
       TangentIn:
         x: 0
@@ -31821,13 +32042,13 @@ MonoBehaviour:
         z: 54.129475
       Rotation:
         value:
-          x: -9.18896e-22
-          y: -0.21767296
-          z: 4.1202294e-21
-          w: 0.97602177
+          x: -9.188963e-22
+          y: -0.21767306
+          z: 4.12023e-21
+          w: 0.9760218
     - Position:
         x: -302.5555
-        y: -0.000015258789
+        y: 0
         z: 306.17114
       TangentIn:
         x: 0
@@ -31839,13 +32060,13 @@ MonoBehaviour:
         z: 37.3048
       Rotation:
         value:
-          x: 4.0512686e-20
+          x: 4.0512705e-20
           y: 0.9999677
-          z: 3.258216e-22
+          z: 3.2582174e-22
           w: 0.008042199
     - Position:
         x: -305.5555
-        y: -0.000015258789
+        y: 0
         z: -106.82885
       TangentIn:
         x: 0
@@ -31857,13 +32078,13 @@ MonoBehaviour:
         z: 79.59027
       Rotation:
         value:
-          x: 3.5557027e-20
+          x: 3.5557037e-20
           y: 0.7311306
-          z: 3.3179226e-20
+          z: 3.3179232e-20
           w: 0.68223757
     - Position:
         x: -107.055504
-        y: -0.000015258789
+        y: 0
         z: -106.12885
       TangentIn:
         x: 0
@@ -31875,13 +32096,13 @@ MonoBehaviour:
         z: 117.515114
       Rotation:
         value:
-          x: 1.7783947e-30
+          x: 1.7783943e-30
           y: 0.68074155
           z: 1.9136732e-30
-          w: 0.7325236
+          w: 0.73252356
     - Position:
         x: -96.555504
-        y: -0.000015258789
+        y: 0
         z: 98.17115
       TangentIn:
         x: 0
@@ -33193,7 +33414,7 @@ MonoBehaviour:
   m_LoopMode: 0
   m_Method: 0
   m_Duration: 60
-  m_MaxSpeed: 65.065605
+  m_MaxSpeed: 65.06559
   m_EasingMode: 0
   m_AlignmentMode: 1
   m_ObjectForwardAxis: 2
@@ -36523,6 +36744,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rcp_fence_01b (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 481204, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 440.63
@@ -37131,6 +37356,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rcp_fence_01b (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 481204, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 393.08
@@ -37627,6 +37856,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rcp_fence_01b (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 481204, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 415.27002
@@ -37874,6 +38107,10 @@ PrefabInstance:
     - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_Name
       value: rcp_fence_01b (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 170740, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 481204, guid: e78c5c7cc4f2e774aac2f989c61e472d, type: 3}
       propertyPath: m_LocalPosition.x
