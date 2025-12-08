@@ -228,8 +228,8 @@ MonoBehaviour:
   OnDeadAnimCompleted:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2526688281262403335}
-        m_TargetAssemblyTypeName: IsometricNPC, Assembly-CSharp
+      - m_Target: {fileID: 7582912505536010109}
+        m_TargetAssemblyTypeName: IsometricFighterNPC, Assembly-CSharp
         m_MethodName: OnDeadAnimCompleted
         m_Mode: 1
         m_Arguments:
@@ -249,7 +249,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8486559676095495670}
-  - component: {fileID: 2526688281262403335}
+  - component: {fileID: 7582912505536010109}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Untagged
@@ -274,7 +274,7 @@ Transform:
   - {fileID: 8489146290247067029}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2526688281262403335
+--- !u!114 &7582912505536010109
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -283,9 +283,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 5176289504958027489}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 329894d6d79268845a2192f68f3cdd1c, type: 3}
+  m_Script: {fileID: 11500000, guid: 0f177737c484e3745b24205ba82a2a30, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::IsometricFighterNPC
   graphics: {fileID: 8489146290247067029}
   hitBox: {fileID: 6240452207200451773}
   animator: {fileID: 5492479815707421596}
@@ -523,8 +523,8 @@ MonoBehaviour:
   OnEntityShot:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2526688281262403335}
-        m_TargetAssemblyTypeName: IsometricNPC, Assembly-CSharp
+      - m_Target: {fileID: 7582912505536010109}
+        m_TargetAssemblyTypeName: IsometricFighterNPC, Assembly-CSharp
         m_MethodName: OnShot
         m_Mode: 1
         m_Arguments:

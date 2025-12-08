@@ -3,9 +3,6 @@ using UnityEngine;
 public class IsometricFighterNPC : IsometricNPC
 {
     [SerializeField]
-    private Transform graphics;
-
-    [SerializeField]
     private Collider hitBox;
 
     [SerializeField]
@@ -38,7 +35,7 @@ public class IsometricFighterNPC : IsometricNPC
 
     void Update()
     {
-        graphics.LookAt(Camera.main.transform);
+        base.Update();
 
         if (isDead || hitController.isHit)
         {
