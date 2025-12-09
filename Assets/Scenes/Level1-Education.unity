@@ -3476,12 +3476,12 @@ GameObject:
   - component: {fileID: 1619138957}
   - component: {fileID: 1619138956}
   m_Layer: 0
-  m_Name: Floor
+  m_Name: Grass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1619138955
 Transform:
   m_ObjectHideFlags: 0
@@ -3492,7 +3492,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 10, y: 1, z: 10}
+  m_LocalScale: {x: 10, y: 1, z: 20}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1493985102}
@@ -3544,7 +3544,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4936c52c36192ec42ac83cff3f1e8e46, type: 2}
+  - {fileID: 2100000, guid: ae29ac02d08992344b9095971167e1c6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4350,7 +4350,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d306d4c57299c504ba7a1593f653e96f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d306d4c57299c504ba7a1593f653e96f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4384,6 +4384,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: d306d4c57299c504ba7a1593f653e96f, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6077e4f498f74ac48ad21c2bead7fd35, type: 2}
     - target: {fileID: 919132149155446097, guid: d306d4c57299c504ba7a1593f653e96f, type: 3}
       propertyPath: m_Name
       value: Stadium
