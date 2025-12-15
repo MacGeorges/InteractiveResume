@@ -77,8 +77,19 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5176289504958027489, guid: 83f39b9fdc277074fb80bb1032db0d51, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5705378448146083251}
+      addedObject: {fileID: 7029029988449539605}
   m_SourcePrefab: {fileID: 100100000, guid: 83f39b9fdc277074fb80bb1032db0d51, type: 3}
+--- !u!114 &1880735160374802847 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8239051134795831320, guid: 83f39b9fdc277074fb80bb1032db0d51, type: 3}
+  m_PrefabInstance: {fileID: 7516309810714960263}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &2125921546205824018 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8489146290247067029, guid: 83f39b9fdc277074fb80bb1032db0d51, type: 3}
@@ -89,7 +100,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5176289504958027489, guid: 83f39b9fdc277074fb80bb1032db0d51, type: 3}
   m_PrefabInstance: {fileID: 7516309810714960263}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5705378448146083251
+--- !u!114 &7029029988449539605
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -98,7 +109,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 3430216871443036006}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 329894d6d79268845a2192f68f3cdd1c, type: 3}
+  m_Script: {fileID: 11500000, guid: a2db9eff5e845f243a1984bfc3647cf2, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::IsometricNPC
+  m_EditorClassIdentifier: Assembly-CSharp::IsometricRandomNPCController
   graphics: {fileID: 2125921546205824018}
+  npcImage: {fileID: 1880735160374802847}
+  npcSprites:
+  - {fileID: 1340153900, guid: 4efe656e8e34cd042a2034fcffd970fe, type: 3}
+  - {fileID: 2144378764, guid: 4efe656e8e34cd042a2034fcffd970fe, type: 3}
+  - {fileID: -256572068, guid: 4efe656e8e34cd042a2034fcffd970fe, type: 3}
+  - {fileID: 635701942, guid: 4efe656e8e34cd042a2034fcffd970fe, type: 3}
+  - {fileID: 938558126, guid: 4efe656e8e34cd042a2034fcffd970fe, type: 3}
+  - {fileID: 1740833954, guid: 4efe656e8e34cd042a2034fcffd970fe, type: 3}
+  - {fileID: -1979455284, guid: 4efe656e8e34cd042a2034fcffd970fe, type: 3}
+  - {fileID: -777081716, guid: 4efe656e8e34cd042a2034fcffd970fe, type: 3}
+  - {fileID: 1107833350, guid: 4efe656e8e34cd042a2034fcffd970fe, type: 3}
+  - {fileID: -2010296792, guid: 4efe656e8e34cd042a2034fcffd970fe, type: 3}
+  - {fileID: -220997734, guid: 4efe656e8e34cd042a2034fcffd970fe, type: 3}
+  - {fileID: -225604374, guid: 4efe656e8e34cd042a2034fcffd970fe, type: 3}
