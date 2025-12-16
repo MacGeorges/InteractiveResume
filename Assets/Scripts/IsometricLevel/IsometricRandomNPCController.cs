@@ -11,7 +11,7 @@ public class IsometricRandomNPCController : IsometricNPC
     [SerializeField]
     private List<Sprite> npcSprites;
 
-    void Start()
+    public void Init()
     {
         npcImage.sprite = npcSprites[Random.Range(0, npcSprites.Count)];
     }
