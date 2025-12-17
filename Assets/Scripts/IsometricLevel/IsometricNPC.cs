@@ -7,6 +7,7 @@ public class IsometricNPC : MonoBehaviour
 
     virtual protected void Update()
     {
-        graphics.LookAt(Camera.main.transform);
+        graphics.LookAt(Camera.main.transform.position);
+        graphics.eulerAngles = new Vector3(0, graphics.eulerAngles.y, 0);
     }
 }

@@ -33,8 +33,6 @@ public class IsometricPlayerControls : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("Player world position : " + transform.position);
-
         //Movement
         Vector2 moveValue = moveAction.ReadValue<Vector2>();
 
@@ -57,7 +55,6 @@ public class IsometricPlayerControls : MonoBehaviour
 
         if (attack.IsPressed())
         {
-            //Debug.Log("ATTACK!");
             weaponController.Shoot();
         }
     }

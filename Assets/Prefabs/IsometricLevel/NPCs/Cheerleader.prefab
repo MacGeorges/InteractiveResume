@@ -74,11 +74,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8489146290247067029, guid: 83f39b9fdc277074fb80bb1032db0d51, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8489146290247067029, guid: 83f39b9fdc277074fb80bb1032db0d51, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8489146290247067029, guid: 83f39b9fdc277074fb80bb1032db0d51, type: 3}
       propertyPath: m_LocalScale.x
@@ -92,12 +92,18 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8489146290247067029, guid: 83f39b9fdc277074fb80bb1032db0d51, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7399021750438156968, guid: 83f39b9fdc277074fb80bb1032db0d51, type: 3}
     - {fileID: 7582912505536010109, guid: 83f39b9fdc277074fb80bb1032db0d51, type: 3}
+    - {fileID: 6240452207200451773, guid: 83f39b9fdc277074fb80bb1032db0d51, type: 3}
     m_RemovedGameObjects:
     - {fileID: 2150347784963982217, guid: 83f39b9fdc277074fb80bb1032db0d51, type: 3}
     - {fileID: 5664607254323668278, guid: 83f39b9fdc277074fb80bb1032db0d51, type: 3}
+    - {fileID: 1279254259999519227, guid: 83f39b9fdc277074fb80bb1032db0d51, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5176289504958027489, guid: 83f39b9fdc277074fb80bb1032db0d51, type: 3}
