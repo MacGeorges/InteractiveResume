@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -32,10 +33,19 @@ public class IsometricPlayerControls : MonoBehaviour
 
     void Update()
     {
+        Debug.Log("Player world position : " + transform.position);
+
         //Movement
         Vector2 moveValue = moveAction.ReadValue<Vector2>();
+
         Vector3 delta = (moveValue.x * rigidbody.transform.right + moveValue.y * rigidbody.transform.forward).normalized;
-        rigidbody.MovePosition(transform.position + delta * Time.deltaTime * speed);
+        Vector3 NewPosition = (transform.position + delta * Time.deltaTime * speed);
+
+        //Clamp to Stadium Grass
+        NewPosition.x = Mathf.Clamp(NewPosition.x, -49, 49);
+        NewPosition.z = Mathf.Clamp(NewPosition.z, -99, 99);
+
+        rigidbody.MovePosition(NewPosition);
 
         isometricWeaponAnimationController.SetIsWalking((moveValue.x != 0) || (moveValue.y != 0));
 
