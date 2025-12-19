@@ -42,7 +42,7 @@ public class IsometricWeaponController : MonoBehaviour
                 return false;
             }
 
-            Transform target = null;
+            IsometricFighterNPC target = null;
             IsometricProjectile ammo;
 
             ammo = ammoPool.GetAmmo();
@@ -52,7 +52,7 @@ public class IsometricWeaponController : MonoBehaviour
             {
                 if (targetDetector.GetTarget(out target))
                 {
-                    ammo.transform.LookAt(target.position);
+                    ammo.transform.LookAt(target.AimTarger);
                 }
                 else
                 {

@@ -5,16 +5,16 @@ using System.Collections.Generic;
 public class IsometricPlayerTargetDetector : MonoBehaviour
 {
     [SerializeField]
-    private List<Transform> targets;
+    private List<IsometricFighterNPC> targets;
 
-    public Transform GetTarget(out Transform closestTarget)
+    public bool GetTarget(out IsometricFighterNPC closestTarget)
     {
         float bestDistance = float.PositiveInfinity;
         closestTarget = null;
 
-        foreach (Transform target in targets)
+        foreach (IsometricFighterNPC target in targets)
         {
-            float targetDistance = Vector3.Distance(transform.position, target.position);
+            float targetDistance = Vector3.Distance(transform.position, target.transform.position);
             if (targetDistance < bestDistance)
             {
                 bestDistance = targetDistance;
@@ -22,7 +22,7 @@ public class IsometricPlayerTargetDetector : MonoBehaviour
             }
         }
 
-        return closestTarget;
+        return (closestTarget != null);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -31,12 +31,22 @@ public class IsometricPlayerTargetDetector : MonoBehaviour
 
         if(controller)
         {
-            targets.Add(other.transform);
+            IsometricFighterNPC fighterNPC = other.GetComponentInParent<IsometricFighterNPC>();
+            if (fighterNPC)
+            {
+                targets.Add(fighterNPC);
+                fighterNPC.OnNPCDie.AddListener(() => TargetDead(fighterNPC));
+            }
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        targets.Remove(other.transform);
+        targets.Remove(other.GetComponentInParent<IsometricFighterNPC>());
+    }
+
+    public void TargetDead(IsometricFighterNPC deadNPC)
+    {
+        targets.Remove(deadNPC);
     }
 }

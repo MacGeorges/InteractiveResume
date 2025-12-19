@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class IsometricFighterNPC : IsometricNPC
 {
@@ -20,6 +21,11 @@ public class IsometricFighterNPC : IsometricNPC
     [SerializeField]
     private float speed;
 
+    [SerializeField]
+    private Transform aimTarget;
+
+    public Transform AimTarger => aimTarget;
+
     [Header("Animations")]
     [SerializeField]
     private AnimationClip shootAnim;
@@ -32,6 +38,8 @@ public class IsometricFighterNPC : IsometricNPC
 
     private float lastAction = 0;
     private float nextActionDelay;
+
+    public UnityEvent OnNPCDie = new UnityEvent();
 
     void Update()
     {
@@ -76,6 +84,8 @@ public class IsometricFighterNPC : IsometricNPC
             isDead = true;
 
             hitBox.enabled = false;
+
+            OnNPCDie.Invoke();
         }
         else
         {
