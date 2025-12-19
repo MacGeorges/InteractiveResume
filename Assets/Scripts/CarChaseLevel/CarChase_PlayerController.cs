@@ -44,5 +44,7 @@ public class CarChase_PlayerController : MonoBehaviour
         float angle = Vector3.Distance(policeCar.transform.position, steeringTarget.position) - 25;
         //Debug.Log("angle: " + angle);
         policeCar.Drift((angle > 2));
+
+        Camera.main.fieldOfView = Mathf.Clamp(Mathf.Lerp(Camera.main.fieldOfView, 60 * (moveValue.y + 1), Time.deltaTime), 40, 80);
     }
 }
