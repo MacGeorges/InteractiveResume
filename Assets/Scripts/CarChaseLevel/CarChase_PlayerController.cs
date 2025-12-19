@@ -30,12 +30,14 @@ public class CarChase_PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        policeCar.transform.position = Vector3.Lerp(policeCar.transform.position, carTarget.position, Time.deltaTime * lerpSpeed);
-
-        steeringTarget.position = Vector3.Lerp(steeringTarget.position, splineTarget.position, Time.deltaTime * lerpSpeed);
-
         Vector2 moveValue = moveAction.ReadValue<Vector2>();
-        steeringTarget.localPosition += new Vector3(moveValue.x * steeringSpeed, 0, 0);
+        Vector3 newSteeringTargetPos = steeringTarget.localPosition + new Vector3(moveValue.x * steeringSpeed, 0, 0);
+
+        newSteeringTargetPos.x = Mathf.Clamp(newSteeringTargetPos.x, -5, 5);
+
+        steeringTarget.localPosition = newSteeringTargetPos;
+
+        policeCar.transform.position = Vector3.Lerp(policeCar.transform.position, steeringTarget.position, Time.deltaTime * lerpSpeed);
 
         policeCar.transform.LookAt(steeringTarget.position);
 
