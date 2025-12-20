@@ -7,8 +7,8 @@ public class CarChase_PlayerController : MonoBehaviour
     private Transform splineTarget;
     [SerializeField]
     private Transform steeringTarget;
-    [SerializeField]
-    private Transform carTarget;
+    //[SerializeField]
+    //private Transform carTarget;
 
     [SerializeField]
     private CarChase_CarController policeCar;

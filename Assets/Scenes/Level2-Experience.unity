@@ -12040,7 +12040,8 @@ PrefabInstance:
       propertyPath: splineTarget
       value: 
       objectReference: {fileID: 1809853332}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2025230939959891622, guid: e45f98c6585921845a2f388b64e6e921, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -39198,7 +39199,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   splineTarget: {fileID: 1809853332}
   steeringTarget: {fileID: 966881723}
-  carTarget: {fileID: 2139975772}
   policeCar: {fileID: 1354877373}
   lerpSpeed: 10
   steeringSpeed: 0.05
