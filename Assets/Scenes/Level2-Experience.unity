@@ -4136,6 +4136,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &200049434
 MeshFilter:
@@ -8256,14 +8257,14 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 427030880}
   m_Enabled: 1
-  serializedVersion: 11
+  serializedVersion: 12
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
+  m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
     m_Resolution: -1
@@ -12006,7 +12007,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2025230939967617364, guid: e45f98c6585921845a2f388b64e6e921, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 399.8
+      value: 400.3
       objectReference: {fileID: 0}
     - target: {fileID: 2025230939967617364, guid: e45f98c6585921845a2f388b64e6e921, type: 3}
       propertyPath: m_LocalRotation.w
@@ -17379,6 +17380,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &901998459
 MeshFilter:
@@ -19114,6 +19116,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &992978774
 MeshFilter:
@@ -21152,6 +21155,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1122047127
 MeshFilter:
@@ -39201,7 +39205,7 @@ MonoBehaviour:
   steeringTarget: {fileID: 966881723}
   policeCar: {fileID: 1354877373}
   lerpSpeed: 10
-  steeringSpeed: 0.05
+  steeringSpeed: 0.25
 --- !u!4 &2137971401
 Transform:
   m_ObjectHideFlags: 0
