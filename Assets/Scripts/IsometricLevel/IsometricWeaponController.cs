@@ -12,6 +12,9 @@ public class IsometricWeaponController : MonoBehaviour
     private AmmoPool ammoPool;
 
     [SerializeField]
+    private DashboardMagazine dashboardMagazine;
+
+    [SerializeField]
     private float fireRate = 1;
 
     [SerializeField]
@@ -34,13 +37,16 @@ public class IsometricWeaponController : MonoBehaviour
         {
             ++currentShotCount;
 
-            if((maxShot > 0) && (currentShotCount > maxShot))
+            if ((maxShot > 0) && (currentShotCount > maxShot))
             {
                 graphicsAnimator.SetTrigger("Reload");
                 currentShotCount = 0;
                 lastShoot = 0;
+                dashboardMagazine?.Reload();
                 return false;
             }
+
+            dashboardMagazine?.Shoot(currentShotCount - 1);
 
             IsometricFighterNPC target = null;
             IsometricProjectile ammo;
