@@ -1,3 +1,5 @@
+using System.Threading;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -33,13 +35,28 @@ public class CarChase_PlayerController : MonoBehaviour
     {
         Vector2 moveValue = moveAction.ReadValue<Vector2>();
 
-        Vector3 inputOffset = new Vector3(moveValue.x * steeringSpeed, 0, 0);
+        policeCar.transform.localPosition = new Vector3(Mathf.Clamp(policeCar.transform.localPosition.x + (moveValue.x * steeringSpeed), -5, 5), 0, 0);
 
-        policeCar.transform.localPosition += inputOffset;
+        Debug.Log("police local x: " + policeCar.transform.localEulerAngles.y);
+        Debug.Log("input: " + moveValue.x);
 
-        steeringTargetRoot.Rotate(Vector3.up, moveValue.x * steeringSpeed);
+        Vector3 carRotation = TransformUtils.GetInspectorRotation(policeCar.transform);
 
-        policeCar.transform.LookAt(steeringTarget.position);
+        if (((carRotation.y < -45) && (moveValue.x > 0)) || // Max à gauche
+            ((carRotation.y > 45) && (moveValue.x < 0)) || // Max à droite
+            ((carRotation.y >= -45) && carRotation.y <= 45))
+        {
+            policeCar.transform.Rotate(Vector3.up, moveValue.x * steeringSpeed * 7.5f);
+        }
+
+        if(moveValue == Vector2.zero)
+        {
+            policeCar.transform.localRotation = Quaternion.Lerp(policeCar.transform.localRotation, Quaternion.identity, Time.deltaTime * steeringSpeed * 10);
+        }
+
+        //policeCar.transform.localRotation = Quaternion.Lerp(policeCar.transform.localRotation, Quaternion.identity, Time.deltaTime);
+
+        //policeCar.transform.LookAt(steeringTarget.position);
 
         return;
         //Old
