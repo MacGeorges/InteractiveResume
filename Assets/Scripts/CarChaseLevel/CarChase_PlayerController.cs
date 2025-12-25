@@ -7,8 +7,8 @@ public class CarChase_PlayerController : MonoBehaviour
     private Transform splineTarget;
     [SerializeField]
     private Transform steeringTarget;
-    //[SerializeField]
-    //private Transform carTarget;
+    [SerializeField]
+    private Transform steeringTargetRoot;
 
     [SerializeField]
     private CarChase_CarController policeCar;
@@ -21,6 +21,9 @@ public class CarChase_PlayerController : MonoBehaviour
     [SerializeField]
     private float steeringSpeed;
 
+    [SerializeField]
+    private float steeringLimit;
+
     private void Start()
     {
         moveAction = InputSystem.actions.FindAction("Move");
@@ -29,6 +32,17 @@ public class CarChase_PlayerController : MonoBehaviour
     private void Update()
     {
         Vector2 moveValue = moveAction.ReadValue<Vector2>();
+
+        Vector3 inputOffset = new Vector3(moveValue.x * steeringSpeed, 0, 0);
+
+        policeCar.transform.localPosition += inputOffset;
+
+        steeringTargetRoot.Rotate(Vector3.up, moveValue.x * steeringSpeed);
+
+        policeCar.transform.LookAt(steeringTarget.position);
+
+        return;
+        //Old
 
         Vector3 newSteeringTargetPos;
 
@@ -45,7 +59,7 @@ public class CarChase_PlayerController : MonoBehaviour
             newSteeringTargetPos = steeringTarget.localPosition + new Vector3(autosteerAngle / 25, 0, 0);
         }
 
-        newSteeringTargetPos.x = Mathf.Clamp(newSteeringTargetPos.x, -5, 5);
+        newSteeringTargetPos.x = Mathf.Clamp(newSteeringTargetPos.x, -steeringLimit, steeringLimit);
 
         if((newSteeringTargetPos.x == -5) || (newSteeringTargetPos.x == 5))
         {
