@@ -9,10 +9,10 @@ public class CarChase_PlayerController : MonoBehaviour
     private Transform splineTarget;
     [SerializeField]
     private Transform splineAdvanceTarget;
-    [SerializeField]
+    /*[SerializeField]
     private Transform steeringTarget;
     [SerializeField]
-    private Transform steeringTargetRoot;
+    private Transform steeringTargetRoot;*/
 
     [SerializeField]
     private Transform carRoot;
@@ -22,8 +22,8 @@ public class CarChase_PlayerController : MonoBehaviour
 
     private InputAction moveAction;
 
-    [SerializeField]
-    private float lerpSpeed;
+    //[SerializeField]
+    //private float lerpSpeed;
 
     [SerializeField]
     private float steeringSpeed;
@@ -34,8 +34,8 @@ public class CarChase_PlayerController : MonoBehaviour
     [SerializeField]
     private float driftTranslateSpeed;
 
-    [SerializeField]
-    private float steeringLimit;
+    //[SerializeField]
+    //private float steeringLimit;
 
     private void Start()
     {
@@ -48,41 +48,135 @@ public class CarChase_PlayerController : MonoBehaviour
 
         //Debug.Log("police local x: " + policeCar.transform.localEulerAngles.y);
         float advanceAngle = Vector3.Angle(splineTarget.forward, splineAdvanceTarget.forward);
-        Debug.Log("Advance angle: " + advanceAngle);
+        if(advanceAngle < 1)
+        {
+            advanceAngle = 1;
+        }
+
+        Vector3 advanceSide = Vector3.Cross(splineTarget.forward, splineAdvanceTarget.forward);
+
+        if (advanceSide.y > 0)
+        {
+            // Negative = Right turn coming
+            // Positive = Left turn coming
+            advanceAngle = -advanceAngle;
+        }
+
+        //Debug.Log("Advance angle: " + advanceAngle);
+
+        //float maxSteer = Mathf.Clamp(((Mathf.Abs(advanceAngle) +1) * 10), -45, 45);
+        float maxSteer = Mathf.Clamp(advanceAngle * 10, -45, 45);
+
+        if (advanceAngle < 1) //Right corner ahead
+        {
+            maxSteer = Mathf.Clamp(advanceAngle * 10, -45, 10);
+        }
+        if (advanceAngle > 1) //Left corner ahead
+        {
+            maxSteer = Mathf.Clamp(advanceAngle * 10, -10, 45);
+        }
+
+        bool drifting = false;
+
+        if (Mathf.Abs(maxSteer) >= 25)
+        {
+            //Debug.Log("Drift zone");
+
+            if ((moveValue.x > 0) && (advanceAngle < 1))
+            {
+                Debug.Log("Drifting Right");
+                drifting = true;
+            }
+            if ((moveValue.x < 0) && (advanceAngle > 1))
+            {
+                Debug.Log("Drifting Left");
+                drifting = true;
+            }
+
+            //carTranslateSpeed = driftTranslateSpeed;
+        }
+
+        //Debug.Log("Max Steer: " + maxSteer);
 
         Vector3 carRotation = TransformUtils.GetInspectorRotation(carRoot.transform);
 
-        float maxSteer = Mathf.Clamp(((advanceAngle +1) * 10), -45, 45);
-        Debug.Log("Max Steer: " + maxSteer);
-
-
-
-        if (((carRotation.y < -maxSteer) && (moveValue.x > 0)) ||
+        /*if (((carRotation.y < -maxSteer) && (moveValue.x > 0)) ||
             ((carRotation.y > maxSteer) && (moveValue.x < 0)) ||
             ((carRotation.y > -maxSteer) && carRotation.y < maxSteer))
         {
             carRoot.transform.Rotate(Vector3.up, moveValue.x * steeringSpeed);
+        }*/
+
+        /*if((moveValue.x > 0))
+        {
+            Debug.Log("Turning Right");
+        }
+        if ((moveValue.x < 0))
+        {
+            Debug.Log("Turning Left");
+        }*/
+
+        //Allow steer if within margins
+
+        //Is turning left
+        if ((carRoot.transform.localPosition.x > -5) && (moveValue.x < 0) && (carRotation.y < maxSteer))
+        {
+            if(carRotation.y < maxSteer) //Duplicated, need rework
+            {
+                carRoot.transform.Rotate(Vector3.up, moveValue.x * steeringSpeed);
+            }
+            else //Duplicated, need rework
+            {
+                carRoot.transform.localRotation = Quaternion.Lerp(carRoot.transform.localRotation, Quaternion.Euler(0, maxSteer, 0), Time.deltaTime * steeringSpeed * 10);
+            }
+        }
+        else //Duplicated, need rework
+        { 
+            carRoot.transform.localRotation = Quaternion.Lerp(carRoot.transform.localRotation, Quaternion.identity, Time.deltaTime * steeringSpeed);
         }
 
-        if((moveValue == Vector2.zero))
+        //Is turning right
+        if ((carRoot.transform.localPosition.x < 5) && (moveValue.x > 0) && (carRotation.y < maxSteer))
         {
-            carRoot.transform.localRotation = Quaternion.Lerp(carRoot.transform.localRotation, Quaternion.identity, Time.deltaTime * steeringSpeed * 5);
+            if (carRotation.y < maxSteer) //Duplicated, need rework
+            {
+                carRoot.transform.Rotate(Vector3.up, moveValue.x * steeringSpeed);
+            }
+            else //Duplicated, need rework
+            {
+                carRoot.transform.localRotation = Quaternion.Lerp(carRoot.transform.localRotation, Quaternion.Euler(0, maxSteer, 0), Time.deltaTime * steeringSpeed * 10);
+            }
+        }
+        else //Duplicated, need rework
+        {
+            carRoot.transform.localRotation = Quaternion.Lerp(carRoot.transform.localRotation, Quaternion.identity, Time.deltaTime * steeringSpeed);
         }
 
-        if (carRotation.y > maxSteer)
+        //carRoot.transform.Rotate(Vector3.up, moveValue.x * steeringSpeed);
+
+        //No steer input, recenter
+        if ((moveValue == Vector2.zero))
         {
-            carRoot.transform.localRotation = Quaternion.Lerp(carRoot.transform.localRotation, Quaternion.Euler(0, maxSteer, 0), Time.deltaTime * steeringSpeed * 5);
+            //Debug.Log("Recenter");
+            carRoot.transform.localRotation = Quaternion.Lerp(carRoot.transform.localRotation, Quaternion.identity, Time.deltaTime * steeringSpeed);
         }
 
-        if (carRotation.y < -maxSteer)
+        if ((advanceAngle > 1) && (moveValue.x > 0))
         {
-            carRoot.transform.localRotation = Quaternion.Lerp(carRoot.transform.localRotation, Quaternion.Euler(0, -maxSteer, 0), Time.deltaTime * steeringSpeed * 5);
+            Debug.Log("Steering right but left turn");
+            //carRoot.transform.localRotation = Quaternion.Lerp(carRoot.transform.localRotation, Quaternion.Euler(0, 10, 0), Time.deltaTime * steeringSpeed);
+        }
+
+        if ((advanceAngle < 1) && (moveValue.x < 0))
+        {
+            Debug.Log("Steering left but right turn");
+            //carRoot.transform.localRotation = Quaternion.Lerp(carRoot.transform.localRotation, Quaternion.Euler(0, -10, 0), Time.deltaTime * steeringSpeed);
         }
 
         float carTranslateSpeed = translateSpeed;
 
-        //Translate slower if drifting (The spline is alreayd turning the car)
-        if(maxSteer >= 25)
+        //Translate slower if drifting (The spline is already turning the car)
+        if(drifting)
         {
             carTranslateSpeed = driftTranslateSpeed;
         }
@@ -94,10 +188,11 @@ public class CarChase_PlayerController : MonoBehaviour
 
         //policeCar.transform.LookAt(steeringTarget.position);
 
-        return;
+        Camera.main.fieldOfView = Mathf.Clamp(Mathf.Lerp(Camera.main.fieldOfView, 60 * (moveValue.y + 1), Time.deltaTime), 40, 80);
+
         //Old
 
-        Vector3 newSteeringTargetPos;
+        /*Vector3 newSteeringTargetPos;
 
         if (moveValue.x != 0)
         {
@@ -128,6 +223,6 @@ public class CarChase_PlayerController : MonoBehaviour
         float driftAngle = Vector3.Distance(policeCar.transform.position, steeringTarget.position) - 25;
         policeCar.Drift((driftAngle > 2));
 
-        Camera.main.fieldOfView = Mathf.Clamp(Mathf.Lerp(Camera.main.fieldOfView, 60 * (moveValue.y + 1), Time.deltaTime), 40, 80);
+        Camera.main.fieldOfView = Mathf.Clamp(Mathf.Lerp(Camera.main.fieldOfView, 60 * (moveValue.y + 1), Time.deltaTime), 40, 80);*/
     }
 }
