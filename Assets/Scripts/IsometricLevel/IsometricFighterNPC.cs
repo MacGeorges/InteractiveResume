@@ -79,8 +79,8 @@ public class IsometricFighterNPC : IsometricNPC
 
         if (health <= 0)
         {
-            Debug.Log("Die");
             animator.SetTrigger("Die");
+            animator.SetBool("Dead", true);
             isDead = true;
 
             hitBox.enabled = false;
@@ -89,7 +89,6 @@ public class IsometricFighterNPC : IsometricNPC
         }
         else
         {
-            Debug.Log("Hit");
             animator.SetTrigger("Hit");
         }
     }
