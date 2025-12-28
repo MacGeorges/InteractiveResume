@@ -29,6 +29,9 @@ public class CarChase_PlayerController : MonoBehaviour
     private float steeringSpeed;
 
     [SerializeField]
+    private float translateLimit;
+
+    [SerializeField]
     private float translateSpeed;
 
     [SerializeField]
@@ -119,14 +122,17 @@ public class CarChase_PlayerController : MonoBehaviour
         //Allow steer if within margins
 
         //Is turning left
-        if ((carRoot.transform.localPosition.x > -5) && (moveValue.x < 0) && (carRotation.y < maxSteer))
+        if ((carRoot.transform.localPosition.x > -translateLimit) && (moveValue.x < 0) && (carRotation.y < maxSteer))
         {
+            Debug.Log("Turning left");
             if(carRotation.y < maxSteer) //Duplicated, need rework
             {
+                Debug.Log("Turning left 1");
                 carRoot.transform.Rotate(Vector3.up, moveValue.x * steeringSpeed);
             }
             else //Duplicated, need rework
             {
+                Debug.Log("Turning left 2"); // Here
                 carRoot.transform.localRotation = Quaternion.Lerp(carRoot.transform.localRotation, Quaternion.Euler(0, maxSteer, 0), Time.deltaTime * steeringSpeed * 10);
             }
         }
@@ -136,14 +142,17 @@ public class CarChase_PlayerController : MonoBehaviour
         }
 
         //Is turning right
-        if ((carRoot.transform.localPosition.x < 5) && (moveValue.x > 0) && (carRotation.y < maxSteer))
+        if ((carRoot.transform.localPosition.x < translateLimit) && (moveValue.x > 0) && (carRotation.y < maxSteer))
         {
-            if (carRotation.y < maxSteer) //Duplicated, need rework
+            Debug.Log("Turning right");
+            if (carRotation.y > maxSteer) //Duplicated, need rework
             {
+                Debug.Log("Turning right 1");
                 carRoot.transform.Rotate(Vector3.up, moveValue.x * steeringSpeed);
             }
             else //Duplicated, need rework
             {
+                Debug.Log("Turning right 2"); // Here
                 carRoot.transform.localRotation = Quaternion.Lerp(carRoot.transform.localRotation, Quaternion.Euler(0, maxSteer, 0), Time.deltaTime * steeringSpeed * 10);
             }
         }
@@ -181,7 +190,7 @@ public class CarChase_PlayerController : MonoBehaviour
             carTranslateSpeed = driftTranslateSpeed;
         }
 
-        carRoot.transform.localPosition = new Vector3(Mathf.Clamp(carRoot.transform.localPosition.x + (moveValue.x * carTranslateSpeed), -5, 5), 0, 0);
+        carRoot.transform.localPosition = new Vector3(Mathf.Clamp(carRoot.transform.localPosition.x + (moveValue.x * carTranslateSpeed), -translateLimit, translateLimit), 0, 0);
 
 
         //policeCar.transform.localRotation = Quaternion.Lerp(policeCar.transform.localRotation, Quaternion.identity, Time.deltaTime);
