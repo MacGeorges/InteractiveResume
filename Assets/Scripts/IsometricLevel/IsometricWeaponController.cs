@@ -15,6 +15,9 @@ public class IsometricWeaponController : MonoBehaviour
     private DashboardMagazine dashboardMagazine;
 
     [SerializeField]
+    private bool isProjectileWeapon;
+
+    [SerializeField]
     private float fireRate = 1;
 
     [SerializeField]
@@ -49,28 +52,38 @@ public class IsometricWeaponController : MonoBehaviour
             dashboardMagazine?.Shoot(currentShotCount - 1);
 
             IsometricFighterNPC target = null;
-            IsometricProjectile ammo;
 
-            ammo = ammoPool.GetAmmo();
-            ammo.transform.position = muzzle.position;
+            targetDetector?.GetTarget(out target);
 
-            if(targetDetector)
+            if (isProjectileWeapon)
             {
-                if (targetDetector.GetTarget(out target))
+                IsometricProjectile ammo;
+
+                ammo = ammoPool.GetAmmo();
+                ammo.transform.position = muzzle.position;
+
+                if (targetDetector)
                 {
-                    ammo.transform.LookAt(target.AimTarger);
+                    if (target)
+                    {
+                        ammo.transform.LookAt(target.AimTarger);
+                    }
+                    else
+                    {
+                        ammo.transform.rotation = transform.rotation;
+                    }
                 }
                 else
                 {
-                    ammo.transform.rotation = transform.rotation;
+                    ammo.transform.LookAt(Camera.main.transform);
                 }
+
+                ammo.Shot();
             }
             else
             {
-                ammo.transform.LookAt(Camera.main.transform);
+                target?.OnShot();
             }
-
-            ammo.Shot();
 
             graphicsAnimator.SetTrigger("Shoot");
 

@@ -660,6 +660,10 @@ PrefabInstance:
       propertyPath: graphicsAnimator
       value: 
       objectReference: {fileID: 5492479815707421596}
+    - target: {fileID: 8912789650697323879, guid: 32b1cd1dad0115d498e2bdb8096f297b, type: 3}
+      propertyPath: isProjectileWeapon
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
