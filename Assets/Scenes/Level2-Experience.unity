@@ -11179,6 +11179,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1354877374}
+  - {fileID: 1020771338}
   m_Father: {fileID: 1809853332}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &560093799
@@ -20193,11 +20194,11 @@ Transform:
   m_GameObject: {fileID: 1020771335}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.5, z: -5.5}
+  m_LocalPosition: {x: 0, y: 2.5, z: -5.500001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1809853332}
+  m_Father: {fileID: 559087910}
   m_LocalEulerAnglesHint: {x: 8.5, y: 0, z: 0}
 --- !u!114 &1020771339
 MonoBehaviour:
@@ -20327,14 +20328,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1020771335}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 706d93649491ed547b2ccf07ef8ae33a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CarChase_CameraController
   lookTarget: {fileID: 559087910}
   translateTarget: {fileID: 559087910}
-  translateSpeed: 10
+  translateSpeed: 100
 --- !u!1001 &1021896623
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34374,7 +34375,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1020771338}
   - {fileID: 559087910}
   m_Father: {fileID: 1153169532}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -40317,7 +40317,7 @@ MonoBehaviour:
   splineAdvanceTarget: {fileID: 412246886}
   carRoot: {fileID: 559087910}
   policeCar: {fileID: 1354877373}
-  steeringSpeed: 5
+  steeringSpeed: 10
   translateLimit: 15
   translateSpeed: 0.5
   driftTranslateSpeed: 0

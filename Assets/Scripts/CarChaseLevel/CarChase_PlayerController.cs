@@ -79,6 +79,8 @@ public class CarChase_PlayerController : MonoBehaviour
             maxSteer = Mathf.Clamp(advanceAngle * 10, -10, 45);
         }
 
+        //Debug.Log("Max steer : " + maxSteer);
+
         bool drifting = false;
 
         if (Mathf.Abs(maxSteer) >= 25)
@@ -121,44 +123,29 @@ public class CarChase_PlayerController : MonoBehaviour
 
         //Allow steer if within margins
 
-        //Is turning left
-        if ((carRoot.transform.localPosition.x > -translateLimit) && (moveValue.x < 0) && (carRotation.y < maxSteer))
-        {
-            Debug.Log("Turning left");
-            if(carRotation.y < maxSteer) //Duplicated, need rework
-            {
-                Debug.Log("Turning left 1");
-                carRoot.transform.Rotate(Vector3.up, moveValue.x * steeringSpeed);
-            }
-            else //Duplicated, need rework
-            {
-                Debug.Log("Turning left 2"); // Here
-                carRoot.transform.localRotation = Quaternion.Lerp(carRoot.transform.localRotation, Quaternion.Euler(0, maxSteer, 0), Time.deltaTime * steeringSpeed * 10);
-            }
-        }
-        else //Duplicated, need rework
-        { 
-            carRoot.transform.localRotation = Quaternion.Lerp(carRoot.transform.localRotation, Quaternion.identity, Time.deltaTime * steeringSpeed);
-        }
 
-        //Is turning right
-        if ((carRoot.transform.localPosition.x < translateLimit) && (moveValue.x > 0) && (carRotation.y < maxSteer))
+        bool turningLeft = (carRoot.transform.localPosition.x > -translateLimit) && (moveValue.x < 0) && (carRotation.y < maxSteer);
+        bool turningRight = (carRoot.transform.localPosition.x < translateLimit) && (moveValue.x > 0) && (carRotation.y < maxSteer);
+
+        if (turningLeft || turningRight)
         {
-            Debug.Log("Turning right");
-            if (carRotation.y > maxSteer) //Duplicated, need rework
+            Debug.Log("Turning");
+            if (carRotation.y < maxSteer)
             {
-                Debug.Log("Turning right 1");
+                Debug.Log("Turning 1");
+                //OK the problem is here
                 carRoot.transform.Rotate(Vector3.up, moveValue.x * steeringSpeed);
             }
-            else //Duplicated, need rework
+            else
             {
-                Debug.Log("Turning right 2"); // Here
-                carRoot.transform.localRotation = Quaternion.Lerp(carRoot.transform.localRotation, Quaternion.Euler(0, maxSteer, 0), Time.deltaTime * steeringSpeed * 10);
+                Debug.Log("Turning 2");
+                carRoot.transform.localRotation = Quaternion.Lerp(carRoot.transform.localRotation, Quaternion.Euler(0, maxSteer, 0), Time.deltaTime * steeringSpeed);
             }
         }
-        else //Duplicated, need rework
+        else //Here
         {
-            carRoot.transform.localRotation = Quaternion.Lerp(carRoot.transform.localRotation, Quaternion.identity, Time.deltaTime * steeringSpeed);
+            //Debug.Log("HERE");
+            //carRoot.transform.localRotation = Quaternion.Lerp(carRoot.transform.localRotation, Quaternion.identity, Time.deltaTime * steeringSpeed);
         }
 
         //carRoot.transform.Rotate(Vector3.up, moveValue.x * steeringSpeed);
@@ -167,7 +154,7 @@ public class CarChase_PlayerController : MonoBehaviour
         if ((moveValue == Vector2.zero))
         {
             //Debug.Log("Recenter");
-            carRoot.transform.localRotation = Quaternion.Lerp(carRoot.transform.localRotation, Quaternion.identity, Time.deltaTime * steeringSpeed);
+            carRoot.transform.localRotation = Quaternion.Lerp(carRoot.transform.localRotation, Quaternion.identity, Time.deltaTime * steeringSpeed * 10);
         }
 
         if ((advanceAngle > 1) && (moveValue.x > 0))
