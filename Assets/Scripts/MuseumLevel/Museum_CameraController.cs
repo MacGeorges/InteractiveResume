@@ -10,6 +10,9 @@ public class Museum_CameraController : MonoBehaviour
     [SerializeField]
     private Transform player;
 
+    [SerializeField]
+    private float speed;
+
     // Update is called once per frame
     void Update()
     {
@@ -20,7 +23,7 @@ public class Museum_CameraController : MonoBehaviour
             return;
         }
 
-        transform.position = Vector3.Lerp(transform.position, positionTargetQueue[0].position, Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, positionTargetQueue[0].position, Time.deltaTime * speed);
 
         if (Vector3.Distance(transform.position, positionTargetQueue[0].position) < (0.1f * positionTargetQueue.Count * 100) && (positionTargetQueue.Count > 1))
         {

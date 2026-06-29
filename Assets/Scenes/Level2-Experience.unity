@@ -40317,7 +40317,7 @@ MonoBehaviour:
   splineAdvanceTarget: {fileID: 412246886}
   carRoot: {fileID: 559087910}
   policeCar: {fileID: 1354877373}
-  steeringSpeed: 10
+  steeringSpeed: 1
   translateLimit: 15
   translateSpeed: 0.5
   driftTranslateSpeed: 0
