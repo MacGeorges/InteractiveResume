@@ -34,7 +34,7 @@ public class IsometricFighterNPC : IsometricNPC
     private float idleHitLength = 0.05f;
 
     private int health = 100;
-    private bool isDead;
+    public bool isDead;
 
     private float lastAction = 0;
     private float nextActionDelay;

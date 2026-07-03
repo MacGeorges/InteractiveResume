@@ -16,4 +16,10 @@ public class IsometricAudioManager : MonoBehaviour
             loop.Play();
         }
     }
+
+    public void StopArenaMusic()
+    {
+        intro.Stop();
+        loop.Stop();
+    }
 }
